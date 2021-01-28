@@ -1,8 +1,73 @@
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
+<?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-</GridPane>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample1.Controller.Controller"
+            prefHeight="500.0" prefWidth="200.0">
+    <Label text="cas"/>
+
+
+    <center>
+
+        <GridPane alignment="CENTER">
+            <Label text="po" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+            <Label text="ut" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+            <Label text="st" GridPane.rowIndex="0" GridPane.columnIndex="3"/>
+            <Label text="st" GridPane.rowIndex="0" GridPane.columnIndex="4"/>
+            <Label text="pa" GridPane.rowIndex="0" GridPane.columnIndex="5" ></Label>
+            <Label text="so" GridPane.rowIndex="0" GridPane.columnIndex="6" ></Label>
+            <Label text="ne" GridPane.rowIndex="0" GridPane.columnIndex="7" ></Label>
+
+            <Button text="1" fx:id="1" GridPane.rowIndex="1" GridPane.columnIndex="1"></Button>
+            <Button text="2" fx:id="2" GridPane.rowIndex="1" GridPane.columnIndex="2" ></Button>
+            <Button text="3" fx:id="3" GridPane.rowIndex="1" GridPane.columnIndex="3"></Button>
+            <Button text="4" fx:id="4" GridPane.rowIndex="1" GridPane.columnIndex="4"></Button>
+            <Button text="5" fx:id="5" GridPane.rowIndex="1" GridPane.columnIndex="5"></Button>
+            <Button text="6" fx:id="vikend" GridPane.rowIndex="1" GridPane.columnIndex="6"></Button>
+            <Button text="7" fx:id="vikend1" GridPane.rowIndex="1" GridPane.columnIndex="7"></Button>
+
+            <Button text="6" fx:id="6" GridPane.rowIndex="2" GridPane.columnIndex="1"></Button>
+            <Button text="7" fx:id="7" GridPane.rowIndex="2" GridPane.columnIndex="2"></Button>
+            <Button text="8" fx:id="8" GridPane.rowIndex="2" GridPane.columnIndex="3"></Button>
+            <Button text="9" fx:id="9" GridPane.rowIndex="2" GridPane.columnIndex="4"></Button>
+            <Button text="10" fx:id="10" GridPane.rowIndex="2" GridPane.columnIndex="5"></Button>
+            <Button text="11" fx:id="11" GridPane.rowIndex="2" GridPane.columnIndex="6"></Button>
+            <Button text="12" fx:id="12" GridPane.rowIndex="2" GridPane.columnIndex="7"></Button>
+
+            <Button text="13" fx:id="13" GridPane.rowIndex="3" GridPane.columnIndex="1"></Button>
+            <Button text="14" fx:id="14" GridPane.rowIndex="3" GridPane.columnIndex="2"></Button>
+            <Button text="15" fx:id="15" GridPane.rowIndex="3" GridPane.columnIndex="3"></Button>
+            <Button text="16" fx:id="16" GridPane.rowIndex="3" GridPane.columnIndex="4"></Button>
+            <Button text="17" fx:id="17" GridPane.rowIndex="3" GridPane.columnIndex="5"></Button>
+            <Button text="18" fx:id="18" GridPane.rowIndex="3" GridPane.columnIndex="6"></Button>
+            <Button text="19" fx:id="19" GridPane.rowIndex="3" GridPane.columnIndex="7"></Button>
+
+            <Button text="20" fx:id="20" GridPane.rowIndex="4" GridPane.columnIndex="1"></Button>
+            <Button text="21" fx:id="21" GridPane.rowIndex="4" GridPane.columnIndex="2" ></Button>
+            <Button text="22" fx:id="22" GridPane.rowIndex="4" GridPane.columnIndex="3"></Button>
+            <Button text="23" fx:id="23" GridPane.rowIndex="4" GridPane.columnIndex="4"></Button>
+            <Button text="24" fx:id="24" GridPane.rowIndex="4" GridPane.columnIndex="5"></Button>
+            <Button text="25" fx:id="25" GridPane.rowIndex="4" GridPane.columnIndex="6"></Button>
+            <Button text="26" fx:id="26" GridPane.rowIndex="4" GridPane.columnIndex="7"></Button>
+
+            <Button text="27" fx:id="27" GridPane.rowIndex="5" GridPane.columnIndex="1"></Button>
+            <Button text="28" fx:id="28" GridPane.rowIndex="5" GridPane.columnIndex="2" ></Button>
+            <Button text="29" fx:id="29" GridPane.rowIndex="5" GridPane.columnIndex="3"></Button>
+            <Button text="30" fx:id="30" GridPane.rowIndex="5" GridPane.columnIndex="4"></Button>
+            <Button text="31" fx:id="31" GridPane.rowIndex="5" GridPane.columnIndex="5"></Button>
+
+        </GridPane>
+
+    </center>
+    <bottom>
+
+    </bottom>
+
+
+</BorderPane>

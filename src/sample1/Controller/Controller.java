@@ -1,2 +1,4 @@
-package sample1.Controller;public class Controller {
+package sample1.Controller;
+
+public class Controller {
 }
