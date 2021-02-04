@@ -1,4 +1,4 @@
-package sample;
+package Kalendar;
 
 public class Controller {
 }
