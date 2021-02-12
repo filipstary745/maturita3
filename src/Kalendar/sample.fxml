@@ -11,17 +11,18 @@
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="sample1.Controller.Controller"
             prefHeight="800.0" prefWidth="700.0">
-    <Label text="cas"/>
      <top>
+
          <GridPane alignment="TOP_CENTER" hgap="10" vgap="10" gridLinesVisible="false" >
              <columnConstraints >
-                 <ColumnConstraints prefWidth="130" />
+             <ColumnConstraints prefWidth="130" />
                  <ColumnConstraints prefWidth="130" />
                  <ColumnConstraints prefWidth="130" />
              </columnConstraints>
              <padding>
                  <Insets top="30" right="50" bottom="20" />
              </padding>
+             <Button onAction="#Localtime"   prefWidth="130"  prefHeight="35"  GridPane.rowIndex="0" GridPane.columnIndex="0" />
              <Label  prefHeight="35" prefWidth="130" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
              <Button  textAlignment="LEFT" text="Exit" prefHeight="35" prefWidth="130" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
              <Button  textAlignment="LEFT"  text="Help" prefHeight="35" prefWidth="130" GridPane.rowIndex="0" GridPane.columnIndex="2"/>

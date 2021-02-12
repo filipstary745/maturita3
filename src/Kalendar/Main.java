@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import java.time.LocalTime;
 
 public class Main extends Application {
 
@@ -20,4 +21,5 @@ public class Main extends Application {
     public static void main(String[] args) {
         launch(args);
     }
+    LocalTime myObj = LocalTime.now();
 }

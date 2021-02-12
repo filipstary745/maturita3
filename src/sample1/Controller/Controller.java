@@ -1,5 +1,6 @@
 package sample1.Controller;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -15,7 +16,7 @@ import java.time.LocalTime;
 import java.util.Locale;
 
 public class Controller {
-    public Label cas;
+
     @FXML
     public void poznamka(javafx.event.ActionEvent event) throws IOException {
         URL url = new File("src/Poznamky/SamplePoznamka.fxml").toURI().toURL();
@@ -33,4 +34,6 @@ public class Controller {
         }
     }
 
+    public void Localtime(ActionEvent actionEvent) {
+    }
 }
