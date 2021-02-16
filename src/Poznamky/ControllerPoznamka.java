@@ -1,37 +1,67 @@
 package Poznamky;
 
 import Databaza.DatabaseCon;
+import Kalendar.Controller;
+import javafx.fxml.FXML;
+import javafx.scene.control.Labeled;
+import javafx.scene.control.TextArea;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
+import java.util.Random;
+
+import static sample1.Controller.Controller.cisloTlacidla;
 
 public class ControllerPoznamka {
+    @FXML
+    TextArea poznamka;
 
-    private String DB_URL = "jdbc:h2:tcp://localhost/E:/Databaza1/database.db";
-    private String USER = "filip";
-    private String PASS = "filip";
+    @FXML
+    public void ulozit() {
+        System.out.println("save");
+        String localPoznamka = poznamka.getText().trim();
 
-        private void DatabaseCon(){
-
+        try {
+            Connection connection = DatabaseCon.getInstance().getConnection();
+            Statement statement = connection.createStatement();
+            String sql = " INSERT INTO POZNAMKA VALUES (" + generator() + ","+ cisloTlacidla +",'" + localPoznamka + "');";
+            System.out.println(sql);
+            statement.execute(sql);
+        } catch (SQLException e) {
         }
+    }
 
-        private static DatabaseCon databaseCon = null;
+    private int generator() {
+        Random random = new Random();
+        return (random.nextInt(500));
+    }
+    @FXML
+    public void load() {
+        String url = "jdbc:h2:tcp://localhost/E:/databaza/maturita.db";
+        String name = "filip";
+        String pass = "filip";
+        try {
+            Connection connection = DriverManager.getConnection(url, name, pass);
+            Statement statement = connection.createStatement();
 
-        public static DatabaseCon getInstance() {
+            String sql = "SELECT POZNAMKY FROM POZNAMKA where datum =  " + cisloTlacidla +
+            " ;";
 
-            if (databaseCon == null) {
-                return new DatabaseCon();
 
-            } else {
-                return databaseCon;
+            ResultSet vystupZDatabazy = statement.executeQuery(sql);
+
+            String zoznamDatabaze = "";
+            while (vystupZDatabazy.next()) {
+
+
+                String meno = vystupZDatabazy.getString("POZNAMKY");
+
+                zoznamDatabaze = zoznamDatabaze +  meno + "" + "\n";
+
             }
+            poznamka.setText(zoznamDatabaze);
+
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
         }
-
-
-        public Connection getConnection() throws SQLException {
-            return DriverManager.getConnection(DB_URL, USER, PASS);
-        }
-
+    }
 }
-

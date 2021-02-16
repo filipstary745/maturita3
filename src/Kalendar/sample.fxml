@@ -22,9 +22,8 @@
              <padding>
                  <Insets top="30" right="50" bottom="20" />
              </padding>
-             <Button onAction="#Localtime"   prefWidth="130"  prefHeight="35"  GridPane.rowIndex="0" GridPane.columnIndex="0" />
-             <Label  prefHeight="35" prefWidth="130" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
-             <Button  textAlignment="LEFT" text="Exit" prefHeight="35" prefWidth="130" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+             <Label  textAlignment="LEFT" text="asdasdadwas"  prefHeight="35" prefWidth="130" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+             <Button  textAlignment="LEFT" text="Exit" prefHeight="35" prefWidth="130" GridPane.rowIndex="0" GridPane.columnIndex="1" onAction="#close"/>
              <Button  textAlignment="LEFT"  text="Help" prefHeight="35" prefWidth="130" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
          </GridPane>
 

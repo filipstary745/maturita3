@@ -6,9 +6,19 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
+<BorderPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="Poznamky.ControllerPoznamka"
             prefHeight="100.0" prefWidth="200.0">
 
-</AnchorPane>
+    <center>
+        <GridPane>
+            <TextArea fx:id="poznamka" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0" prefHeight="70" ></TextArea>
+            <Button text="Save" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.halignment="RIGHT" onAction="#ulozit" ></Button>
+            <Button text="Close" GridPane.rowIndex="1" GridPane.columnIndex="1" GridPane.halignment="RIGHT"  ></Button>
+            <Button text="Load" GridPane.rowIndex="1" GridPane.columnIndex="2" GridPane.halignment="LEFT" onAction="#load"  ></Button>
+
+        </GridPane>
+    </center>
+</BorderPane>
+
