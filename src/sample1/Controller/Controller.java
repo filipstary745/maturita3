@@ -57,12 +57,8 @@ public class Controller {
     }
 
 
-    public void close() {
-        JFrame frame = new JFrame("EXIT");
-            if (JOptionPane.showConfirmDialog(frame, "Confirm if you want Exit", "EXIT", JOptionPane.YES_NO_OPTION) == JOptionPane.YES_NO_OPTION) {
-              System.exit(0);
-        }
-    }
+
+
     public void initialize() {
         datum.setText("filip");
         LocalDate currentdate = LocalDate.now();
@@ -73,4 +69,5 @@ public class Controller {
         datum.setText("" + currentMonth +" " + currentYear);
 
     }
+
 }

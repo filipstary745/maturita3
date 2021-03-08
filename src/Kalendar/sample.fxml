@@ -9,7 +9,7 @@
 <?import javafx.geometry.Insets?>
 <BorderPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="sample1.Controller.Controller"
+            fx:controller="Kalendar.Controller"
             prefHeight="800.0" prefWidth="700.0">
      <top>
 
@@ -22,6 +22,9 @@
              <padding>
                  <Insets top="30" right="50" bottom="20" />
              </padding>
+             <Button  text="zmenatyzdna"  prefWidth="130"  prefHeight="35"  GridPane.rowIndex="0" GridPane.columnIndex="0" onAction="#zmenaMesiac"/>
+
+             <Label fx:id="aktualnyMesiac"  textAlignment="LEFT" text="DefalutMesiac" prefHeight="35" prefWidth="130" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
              <Label  textAlignment="LEFT" fx:id="datum" text="asdasdadwas"  prefHeight="35" prefWidth="130" GridPane.rowIndex="0" GridPane.columnIndex="0"    />
              <Button  textAlignment="LEFT" text="Exit" prefHeight="35" prefWidth="130" GridPane.rowIndex="0" GridPane.columnIndex="1" onAction="#close"/>
              <Button  textAlignment="LEFT"  text="Help" prefHeight="35" prefWidth="130" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
