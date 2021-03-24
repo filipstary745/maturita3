@@ -1,9 +1,7 @@
 package Poznamky;
 
 import Databaza.DatabaseCon;
-import Kalendar.Controller;
 import javafx.fxml.FXML;
-import javafx.scene.control.Labeled;
 import javafx.scene.control.TextArea;
 
 import java.sql.*;
